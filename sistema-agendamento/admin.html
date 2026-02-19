@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Admin - Sistema de Agendamento</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Administração</h1>
+    <div class="controls">
+      <label>Filtrar por data: <input id="filter-date" type="date"></label>
+      <button id="clear-filter">Limpar filtro</button>
+      <button id="clear-all">Excluir todos</button>
+    </div>
+
+    <table id="bookings-table">
+      <thead>
+        <tr><th>Nome</th><th>Email</th><th>Telefone</th><th>Data</th><th>Horário</th><th>Ações</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <p><a href="index.html">Voltar ao agendamento</a></p>
+  </main>
+
+  <script src="js/ui.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
