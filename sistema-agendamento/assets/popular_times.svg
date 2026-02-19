@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="720" height="220" viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .label{fill:#cfe9ff;font-family:Inter,Arial;font-size:12px}
+    .title{fill:#e6eef8;font-family:Inter,Arial;font-size:16px;font-weight:600}
+    .bar{fill:#00e5ff}
+  </style>
+  <rect width="100%" height="100%" fill="transparent"/>
+  <text x="18" y="28" class="title">Horários mais populares (amostra)</text>
+  <g transform="translate(40,60)">
+    <!-- sample times: 09:00(12), 10:00(18), 14:00(24), 15:30(9), 16:00(6) -->
+    <g transform="translate(0,0)">
+      <text x="0" y="14" class="label">09:00</text>
+      <rect x="80" y="0" width="120" height="18" class="bar" opacity="0.9"/>
+      <text x="210" y="14" class="label">12</text>
+    </g>
+    <g transform="translate(0,36)">
+      <text x="0" y="14" class="label">10:00</text>
+      <rect x="80" y="0" width="180" height="18" class="bar" opacity="0.95"/>
+      <text x="270" y="14" class="label">18</text>
+    </g>
+    <g transform="translate(0,72)">
+      <text x="0" y="14" class="label">14:00</text>
+      <rect x="80" y="0" width="240" height="18" class="bar"/>
+      <text x="330" y="14" class="label">24</text>
+    </g>
+    <g transform="translate(0,108)">
+      <text x="0" y="14" class="label">15:30</text>
+      <rect x="80" y="0" width="90" height="18" class="bar" opacity="0.9"/>
+      <text x="175" y="14" class="label">9</text>
+    </g>
+    <g transform="translate(0,144)">
+      <text x="0" y="14" class="label">16:00</text>
+      <rect x="80" y="0" width="60" height="18" class="bar" opacity="0.85"/>
+      <text x="150" y="14" class="label">6</text>
+    </g>
+  </g>
+</svg>

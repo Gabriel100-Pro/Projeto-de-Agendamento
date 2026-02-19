@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="720" height="240" viewBox="0 0 720 240" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg{fill:transparent}
+    .bar{fill:#7c3aed}
+    .bar2{fill:#00e5ff}
+    .label{fill:#cfe9ff;font-family:Inter,Arial;font-size:12px}
+    .title{fill:#e6eef8;font-family:Inter,Arial;font-size:16px;font-weight:600}
+  </style>
+  <rect width="100%" height="100%" class="bg"/>
+  <text x="18" y="28" class="title">Agendamentos por dia (últimos 7 dias)</text>
+  <!-- bars -->
+  <!-- sample data: Mon 5, Tue 8, Wed 3, Thu 10, Fri 6, Sat 2, Sun 4 -->
+  <g transform="translate(40,60)">
+    <g transform="translate(0,0)">
+      <rect x="0" y="0" width="60" height="120" class="bar2" opacity="0.12"/>
+      <rect x="0" y="40" width="60" height="80" class="bar"/>
+      <text x="30" y="-8" text-anchor="middle" class="label">5</text>
+      <text x="30" y="145" text-anchor="middle" class="label">Seg</text>
+    </g>
+    <g transform="translate(80,0)">
+      <rect x="0" y="0" width="60" height="120" class="bar2" opacity="0.12"/>
+      <rect x="0" y="0" width="60" height="120" class="bar"/>
+      <text x="30" y="-8" text-anchor="middle" class="label">8</text>
+      <text x="30" y="145" text-anchor="middle" class="label">Ter</text>
+    </g>
+    <g transform="translate(160,0)">
+      <rect x="0" y="0" width="60" height="120" class="bar2" opacity="0.12"/>
+      <rect x="0" y="64" width="60" height="56" class="bar"/>
+      <text x="30" y="-8" text-anchor="middle" class="label">3</text>
+      <text x="30" y="145" text-anchor="middle" class="label">Qua</text>
+    </g>
+    <g transform="translate(240,0)">
+      <rect x="0" y="0" width="60" height="120" class="bar2" opacity="0.12"/>
+      <rect x="0" y="0" width="60" height="120" class="bar"/>
+      <text x="30" y="-8" text-anchor="middle" class="label">10</text>
+      <text x="30" y="145" text-anchor="middle" class="label">Qui</text>
+    </g>
+    <g transform="translate(320,0)">
+      <rect x="0" y="0" width="60" height="120" class="bar2" opacity="0.12"/>
+      <rect x="0" y="32" width="60" height="88" class="bar"/>
+      <text x="30" y="-8" text-anchor="middle" class="label">6</text>
+      <text x="30" y="145" text-anchor="middle" class="label">Sex</text>
+    </g>
+    <g transform="translate(400,0)">
+      <rect x="0" y="0" width="60" height="120" class="bar2" opacity="0.12"/>
+      <rect x="0" y="80" width="60" height="40" class="bar"/>
+      <text x="30" y="-8" text-anchor="middle" class="label">2</text>
+      <text x="30" y="145" text-anchor="middle" class="label">Sáb</text>
+    </g>
+    <g transform="translate(480,0)">
+      <rect x="0" y="0" width="60" height="120" class="bar2" opacity="0.12"/>
+      <rect x="0" y="56" width="60" height="64" class="bar"/>
+      <text x="30" y="-8" text-anchor="middle" class="label">4</text>
+      <text x="30" y="145" text-anchor="middle" class="label">Dom</text>
+    </g>
+  </g>
+</svg>

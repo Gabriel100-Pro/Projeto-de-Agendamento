@@ -15,6 +15,11 @@
       <button id="clear-all">Excluir todos</button>
     </div>
 
+    <div id="charts" style="display:grid;grid-template-columns:1fr;gap:18px;margin-bottom:18px">
+      <div id="chart-daily"></div>
+      <div id="chart-times"></div>
+    </div>
+
     <table id="bookings-table">
       <thead>
         <tr><th>Nome</th><th>Email</th><th>Telefone</th><th>Data</th><th>Horário</th><th>Ações</th></tr>
@@ -26,6 +31,7 @@
   </main>
 
   <script src="js/ui.js"></script>
+  <script src="js/stats.js"></script>
   <script src="js/admin.js"></script>
 </body>
 </html>

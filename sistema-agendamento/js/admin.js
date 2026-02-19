@@ -10,13 +10,23 @@
     tbody.innerHTML = ''
     if(bookings.length===0){
       tbody.innerHTML = '<tr><td colspan="6">Nenhum agendamento</td></tr>'
+      // still render stats
+      if(window.renderStats) window.renderStats()
       return
     }
+    const headers = ['Nome','Email','Telefone','Data','Horário','Ações']
     bookings.forEach(b=>{
       const tr = document.createElement('tr')
-      tr.innerHTML = `<td>${b.name}</td><td>${b.email}</td><td>${b.phone}</td><td>${b.date}</td><td>${b.time}</td><td><button data-id="${b.id}" class="del">Excluir</button></td>`
+      const cells = [b.name,b.email,b.phone,b.date,b.time,`<button data-id="${b.id}" class="del">Excluir</button>`]
+      cells.forEach((c,i)=>{
+        const td = document.createElement('td')
+        td.setAttribute('data-label', headers[i])
+        td.innerHTML = c
+        tr.appendChild(td)
+      })
       tbody.appendChild(tr)
     })
+    if(window.renderStats) window.renderStats()
   }
 
   function deleteBooking(id){
